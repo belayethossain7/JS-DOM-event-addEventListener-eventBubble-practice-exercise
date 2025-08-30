@@ -20,9 +20,12 @@ const btnMakeBlue = document.getElementById('btn-make-blue');
         // console.log(btnMakeBlue)
 
 
-// option 3 : different version
+// option 3 : different version for clicjk function
 const btnMaleAqua = document.getElementById('btn-make-aqua');
         btnMaleAqua.onclick = makeAqua;
         function makeAqua(){
             document.body.style.backgroundColor = 'aqua';
         }
+
+
+        
