@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events summery</title>
+</head>
+<body>
+    
+    <h1>Dom Events Summary</h1>
+
+
+    <input id="user-name" type="text" placeholder="Your name">
+    <button onclick="addName()">Add Name</button>
+
+    
+    <div id="show-name">
+
+    </div>
+
+
+
+    <script>
+        function addName(){
+            const usetName = document.getElementById('user-name');
+            const val = usetName.value;
+            console.log(val);
+
+            const newC = document.getElementById('show-name');
+
+            const p = document.createElement('p');
+
+            p.innerText = val;
+
+            newC.appendChild(p);
+
+            usetName.value = '';
+        }
+
+        
+    </script>
+</body>
+</html>
